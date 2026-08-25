@@ -6,7 +6,8 @@ SRC =   ft_isalpha.c \
         ft_isascii.c \
         ft_isprint.c \
         ft_touper.c  \
-        ft_tolower.c
+        ft_tolower.c \
+        ft_memset.c \
 
 OBJS = $(SRC:.c=.o)                 // auto changing .c to .o (one object per file)
 
