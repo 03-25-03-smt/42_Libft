@@ -2,7 +2,8 @@ NAME = libft.a                     // name of file output
 
 SRC =   ft_isalpha.c \
         ft_isdigit.c \
-        ft_isalnum.c
+        ft_isalnum.c \
+        ft_isascii.c
 
 OBJS = $(SRC:.c=.o)                 // auto changing .c to .o (one object per file)
 
