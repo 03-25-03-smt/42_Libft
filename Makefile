@@ -14,6 +14,7 @@ SRC =   ft_isalpha.c \
         ft_memchr.c \
         ft_memcmp.c \
         ft_strlen.c \
+        ft_strlcpy.c
 
 OBJS = $(SRC:.c=.o)                 // auto changing .c to .o (one object per file)
 
