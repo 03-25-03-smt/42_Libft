@@ -1,6 +1,7 @@
 NAME = libft.a                     // name of file output 
 
-SRC =   ft_isalpha.c                // list of all .c files  
+SRC =   ft_isalpha.c \
+        ft_isdigit.c
 
 OBJS = $(SRC:.c=.o)                 // auto changing .c to .o (one object per file)
 
