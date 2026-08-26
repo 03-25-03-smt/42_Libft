@@ -18,6 +18,7 @@ SRC =   ft_isalpha.c \
         ft_strlcat.c \
         ft_strchr.c \
         ft_strrchr.c \
+        ft_strcmp.c \
 
 
 
