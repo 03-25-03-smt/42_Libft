@@ -20,6 +20,7 @@ SRC =   ft_isalpha.c \
         ft_strrchr.c \
         ft_strcmp.c \
         ft_strnstr.c \
+        ft_atoi.c \ 
 
 
 
