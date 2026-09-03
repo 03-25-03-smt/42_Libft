@@ -1,4 +1,4 @@
-NAME = libft.a                     // name of file output 
+NAME = libft.a                    
 
 SRC =   ft_isalpha \
 	ft_isdigit \
@@ -44,27 +44,27 @@ SRC =   ft_isalpha \
 	ft_lstiter \
 	ft_lstmap  
 
-OBJS = $(SRC:.c=.o)                 // auto changing .c to .o (one object per file)
+OBJS = $(SRC:.c=.o)                
 
 CC = cc 
 CFLAGS = -Wall -Wextra -Werror 
-RM = rm -f                         // delete even if file not exist
-AR = ar crs                        // to create .a 
+RM = rm -f                         
+AR = ar crs                        
 
-%.o: %.c                           // pattern : that for .o we need .c file and once foumd .c we are compiling and receivimg .o
+%.o: %.c                           
     $(CC)  $(CFLAGS)  -c  $<  -o  $@
 
-$(NAME):  $(OBJS)                  // for libft.a we need OBJS , once true we are creating .a , libft.a , ft_isalpha.o
+$(NAME):  $(OBJS)                  
           $(AR)  $(NAME)  $(OBJS)
 
-all:  $(NAME)                        // creatin library by default, when "make"
+all:  $(NAME)                       
 
-clean:                               // deleting middle stage .o files 
+clean:                               
       $(RM)  $(OBJS)
 
-fclean:  clean                        // deleting libft.a file
+fclean:  clean                       
           $(RM)  $(NAME)
 
-re:  fclean  all                       // recreating library from scratch
+re:  fclean  all                       
 
-.PHONY:  all fclean  re                // already explained in notebook
+.PHONY:  all fclean  re             
